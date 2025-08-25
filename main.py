@@ -44,8 +44,8 @@ ADMINS.append(OWNER)
 
 bot = Client("bot",    
    bot_token="",    
-   api_id= 29978901,    
-   api_hash= "500fc876c5356cf04ed3698912dc2edf"
+   api_id= ,    
+   api_hash= ""
 )
 
 @bot.on_message(filters.command(["started"]))    
@@ -302,4 +302,5 @@ async def account_login(bot: Client, m: Message):
         await m.reply_text(e)
         
 bot.run()
+
 
